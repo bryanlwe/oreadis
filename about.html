@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Pack Light</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #4a7c59;
+    --green-dark: #3d6849;
+    --green-bg: #f0f5f1;
+    --grey: #767676;
+    --rule: #e2e2e2;
+    --max: 680px;
+    --body: Georgia, 'Times New Roman', serif;
+    --ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  html { font-size: 17px; }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-family: var(--body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--rule);
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-name {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    text-decoration: none;
+  }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    font-family: var(--ui);
+    font-size: 0.82rem;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  nav a:hover, nav a.active { color: var(--green); }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── ABOUT PAGE ── */
+  /* .post-header on standalone pages adds 48px top padding to compensate
+     for the missing back-button air found on post pages. */
+  .post-header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 32px;
+  }
+  h1.post-title-large {
+    font-size: 2.1rem;
+    font-weight: normal;
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+  }
+
+  .about-body p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 18px;
+  }
+  .about-body p:last-child { margin-bottom: 0; }
+
+  .about-body p.about-abn {
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    color: var(--grey);
+    line-height: 1.5;
+    margin-top: 28px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 96px;
+  }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ui);
+    font-size: 0.74rem;
+    color: var(--grey);
+  }
+  .footer-inner a { color: var(--grey); }
+  .footer-inner a:hover { color: var(--green); text-decoration: none; }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="index.html">Pack Light</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="post-header">
+    <h1 class="post-title-large">About</h1>
+  </div>
+
+  <div class="about-body">
+    <p>I'm Bryan, based in Sydney, Australia. This is where I write up the trips I take on annual leave — backpacking and hiking across Asia and Oceania. Each post covers how to get there, where to stay, what to eat, walks worth doing, and what it cost. No sponsored content, no luxury options.</p>
+    <p class="about-abn">Published as an Australian sole trader. ABN 38 712 904 653.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Pack Light</span>
+    <span><a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse — Pack Light</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #4a7c59;
+    --green-dark: #3d6849;
+    --green-bg: #f0f5f1;
+    --grey: #767676;
+    --rule: #e2e2e2;
+    --max: 680px;
+    --body: Georgia, 'Times New Roman', serif;
+    --ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  html { font-size: 17px; }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-family: var(--body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--rule);
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-name {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    text-decoration: none;
+  }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    font-family: var(--ui);
+    font-size: 0.82rem;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  nav a:hover, nav a.active { color: var(--green); }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── TAGLINE ── */
+  .tagline {
+    font-family: var(--ui);
+    font-size: 0.85rem;
+    color: var(--grey);
+    padding: 14px 24px;
+    max-width: var(--max);
+    margin: 0 auto;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* ── FILTERS ── */
+  .filters {
+    margin: 36px 0 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .filter-group { margin-bottom: 18px; }
+  .filter-group:last-child { margin-bottom: 0; }
+  .filter-label {
+    font-family: var(--ui);
+    font-size: 0.66rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--grey);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .chip {
+    font-family: var(--ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    padding: 5px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: #fff;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-decoration: none;
+    line-height: 1.3;
+  }
+  .chip:hover {
+    border-color: var(--green);
+    color: var(--green);
+    text-decoration: none;
+  }
+  .chip.active {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+  }
+  .chip .count {
+    color: var(--grey);
+    margin-left: 5px;
+    font-size: 0.68rem;
+  }
+  .chip.active .count { color: #d8e6dc; }
+
+  .clear-link {
+    font-family: var(--ui);
+    font-size: 0.75rem;
+    color: var(--grey);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 14px;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  .clear-link:hover { color: var(--green); }
+
+  .results-meta {
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    color: var(--grey);
+    margin: 0 0 4px;
+  }
+
+  /* ── POST LIST ── */
+  .post-list { margin: 0; }
+
+  a.post-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0 24px;
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+  }
+  a.post-item:first-child { border-top: 1px solid var(--rule); }
+  a.post-item:hover { text-decoration: none; }
+  a.post-item:hover .post-title { color: var(--green); }
+
+  .post-title {
+    font-size: 1.08rem;
+    font-weight: normal;
+    line-height: 1.35;
+    color: #111;
+    margin-bottom: 6px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .post-summary {
+    font-family: var(--ui);
+    font-size: 0.82rem;
+    color: #666;
+    line-height: 1.45;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .post-right {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    text-align: right;
+    font-family: var(--ui);
+    font-size: 0.72rem;
+    color: var(--grey);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .post-country {
+    font-family: var(--ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+  .post-type {
+    font-family: var(--ui);
+    font-size: 0.65rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+
+  .empty-state {
+    font-family: var(--body);
+    font-size: 0.95rem;
+    color: var(--grey);
+    font-style: italic;
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 96px;
+  }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ui);
+    font-size: 0.74rem;
+    color: var(--grey);
+  }
+  .footer-inner a { color: var(--grey); }
+  .footer-inner a:hover { color: var(--green); text-decoration: none; }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="index.html">Pack Light</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="browse.html" class="active">Browse</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="tagline">
+  Browse all trip notes by country and type.
+</div>
+
+<main>
+  <div class="filters">
+    <div class="filter-group">
+      <span class="filter-label">Country</span>
+      <div class="chips" id="country-chips"></div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">Type</span>
+      <div class="chips" id="type-chips"></div>
+    </div>
+    <button class="clear-link" id="clear-btn" style="display:none;">Clear filters</button>
+  </div>
+
+  <div class="results-meta" id="results-meta"></div>
+  <div class="post-list" id="post-list"></div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Pack Light</span>
+    <span><a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+
+<script>
+  // Single source of truth — every post on the site.
+  // When adding a new post: append a row here AND on index.html.
+  const POSTS = [
+    {
+      slug: 'mount-cook-national-park',
+      title: 'Mount Cook National Park, New Zealand',
+      summary: 'Three nights based in Mount Cook Village. Day hikes through glacier valleys, icebergs on Hooker Lake, and some of the best alpine scenery in New Zealand.',
+      country: 'New Zealand',
+      countrySlug: 'new-zealand',
+      type: 'travel',
+      date: '7 Dec 2025',
+      sortDate: '2025-12-07',
+    },
+    {
+      slug: 'senggigi-lombok',
+      title: 'Senggigi, Lombok',
+      summary: 'One to three days on Lombok\'s west coast. Beach sunsets, easy access to the Gili Islands, and a scenic coastal road north of town.',
+      country: 'Indonesia',
+      countrySlug: 'indonesia',
+      type: 'travel',
+      date: '7 Aug 2026',
+      sortDate: '2026-08-07',
+    },
+    {
+      slug: 'kuta-lombok',
+      title: 'Kuta, Lombok',
+      summary: 'Two to four days using Kuta as a base for southern Lombok. Scooter rides to beaches and surf spots, sunset hills, and waterfall day trips inland.',
+      country: 'Indonesia',
+      countrySlug: 'indonesia',
+      type: 'travel',
+      date: '5 Aug 2026',
+      sortDate: '2026-08-05',
+    },
+    {
+      slug: 'lombok-indonesia',
+      title: 'Lombok, Indonesia',
+      summary: 'A week using Kuta as a base. Scooter rides along the south coast, beginner surf at Selong Belanak, waterfall day trips, and easy access to the Gili Islands.',
+      country: 'Indonesia',
+      countrySlug: 'indonesia',
+      type: 'travel',
+      date: '1 Aug 2025',
+      sortDate: '2025-08-01',
+    },
+    {
+      slug: 'chiang-dao-thailand',
+      title: 'Chiang Dao, Thailand',
+      summary: 'Two to four days in a quiet mountain town north of Chiang Mai. Limestone caves, rice field cafés, hot springs and a scooter loop through the valley.',
+      country: 'Thailand',
+      countrySlug: 'thailand',
+      type: 'travel',
+      date: '2 Mar 2026',
+      sortDate: '2026-03-02',
+    },
+    {
+      slug: 'chiang-mai-thailand',
+      title: 'Chiang Mai, Thailand',
+      summary: 'Seven days using the Old City as a base. Temples, Northern Thai cooking, cafe mornings, plus full-day trips to Doi Inthanon and the Sticky Waterfalls.',
+      country: 'Thailand',
+      countrySlug: 'thailand',
+      type: 'travel',
+      date: '28 Feb 2026',
+      sortDate: '2026-02-28',
+    },
+    {
+      slug: 'ben-lomond-queenstown',
+      title: 'Ben Lomond Summit Track, Queenstown',
+      summary: '14 km day hike straight out of town. Steady forest climb, exposed ridge to the summit, full views over Lake Wakatipu.',
+      country: 'New Zealand',
+      countrySlug: 'new-zealand',
+      type: 'hike',
+      date: '1 Dec 2025',
+      sortDate: '2025-12-01',
+    },
+    {
+      slug: 'kepler-track-fiordland',
+      title: 'Kepler Track, Fiordland National Park',
+      summary: '60 km loop from Te Anau over three days. Long climb to Luxmore, then a full day on the exposed alpine ridge to Iris Burn.',
+      country: 'New Zealand',
+      countrySlug: 'new-zealand',
+      type: 'hike',
+      date: '20 Nov 2025',
+      sortDate: '2025-11-20',
+    },
+  ];
+
+  const TYPE_LABELS = { hike: 'Hike', travel: 'Travel' };
+
+  const state = { country: null, type: null };
+
+  function readUrl() {
+    const params = new URLSearchParams(window.location.search);
+    state.country = params.get('country') || null;
+    state.type = params.get('type') || null;
+  }
+
+  function writeUrl() {
+    const params = new URLSearchParams();
+    if (state.country) params.set('country', state.country);
+    if (state.type) params.set('type', state.type);
+    const qs = params.toString();
+    const url = qs ? `?${qs}` : window.location.pathname;
+    history.replaceState(null, '', url);
+  }
+
+  function uniqueCountries() {
+    const counts = {};
+    POSTS.forEach(p => {
+      const key = p.countrySlug;
+      if (!counts[key]) counts[key] = { slug: key, label: p.country, count: 0 };
+      counts[key].count++;
+    });
+    return Object.values(counts).sort((a, b) => a.label.localeCompare(b.label));
+  }
+
+  function uniqueTypes() {
+    const counts = {};
+    POSTS.forEach(p => {
+      if (!counts[p.type]) counts[p.type] = { slug: p.type, label: TYPE_LABELS[p.type] || p.type, count: 0 };
+      counts[p.type].count++;
+    });
+    return Object.values(counts).sort((a, b) => a.label.localeCompare(b.label));
+  }
+
+  function renderChips(containerId, items, currentValue, group) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    items.forEach(item => {
+      const chip = document.createElement('button');
+      chip.className = 'chip' + (item.slug === currentValue ? ' active' : '');
+      chip.innerHTML = `${item.label}<span class="count">${item.count}</span>`;
+      chip.addEventListener('click', () => {
+        state[group] = (state[group] === item.slug) ? null : item.slug;
+        writeUrl();
+        render();
+      });
+      el.appendChild(chip);
+    });
+  }
+
+  function filteredPosts() {
+    return POSTS
+      .filter(p => !state.country || p.countrySlug === state.country)
+      .filter(p => !state.type || p.type === state.type)
+      .sort((a, b) => b.sortDate.localeCompare(a.sortDate));
+  }
+
+  function renderPosts() {
+    const list = document.getElementById('post-list');
+    const meta = document.getElementById('results-meta');
+    const posts = filteredPosts();
+
+    const total = POSTS.length;
+    const shown = posts.length;
+    if (state.country || state.type) {
+      meta.textContent = `${shown} of ${total} post${total === 1 ? '' : 's'}`;
+    } else {
+      meta.textContent = `${total} post${total === 1 ? '' : 's'}`;
+    }
+
+    list.innerHTML = '';
+    if (posts.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'empty-state';
+      empty.textContent = 'No posts match the current filters.';
+      list.appendChild(empty);
+      return;
+    }
+
+    posts.forEach(p => {
+      const a = document.createElement('a');
+      a.className = 'post-item';
+      a.href = `posts/${p.slug}.html`;
+      a.innerHTML = `
+        <div class="post-title">${p.title}</div>
+        <div class="post-summary">${p.summary}</div>
+        <div class="post-right">
+          <span class="post-country">${p.country}</span>
+          <span class="post-type">${TYPE_LABELS[p.type] || p.type}</span>
+          <span>${p.date}</span>
+        </div>
+      `;
+      list.appendChild(a);
+    });
+  }
+
+  function renderClearBtn() {
+    const btn = document.getElementById('clear-btn');
+    btn.style.display = (state.country || state.type) ? 'inline-block' : 'none';
+  }
+
+  function render() {
+    renderChips('country-chips', uniqueCountries(), state.country, 'country');
+    renderChips('type-chips', uniqueTypes(), state.type, 'type');
+    renderPosts();
+    renderClearBtn();
+  }
+
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    state.country = null;
+    state.type = null;
+    writeUrl();
+    render();
+  });
+
+  readUrl();
+  render();
+</script>
+
+</body>
+</html>

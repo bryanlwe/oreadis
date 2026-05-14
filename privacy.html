@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy — Pack Light</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #4a7c59;
+    --green-dark: #3d6849;
+    --green-bg: #f0f5f1;
+    --grey: #767676;
+    --rule: #e2e2e2;
+    --max: 680px;
+    --body: Georgia, 'Times New Roman', serif;
+    --ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  html { font-size: 17px; }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-family: var(--body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--rule);
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-name {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    text-decoration: none;
+  }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    font-family: var(--ui);
+    font-size: 0.82rem;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  nav a:hover, nav a.active { color: var(--green); }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── PAGE HEADER ── */
+  /* .post-header on standalone pages adds 48px top padding to compensate
+     for the missing back-button air found on post pages. */
+  .post-header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 32px;
+  }
+  h1.post-title-large {
+    font-size: 2.1rem;
+    font-weight: normal;
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+  }
+  .post-meta-top {
+    font-family: var(--ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--grey);
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  /* ── BODY ── */
+  .page-body p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 18px;
+  }
+
+  .section { margin-bottom: 36px; }
+  .section-heading {
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #111;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  .section p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+  }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul { list-style: none; padding: 0; margin: 0 0 14px; }
+  .section ul li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    color: #1a1a1a;
+  }
+  .section ul li:last-child { border-bottom: none; }
+  .section ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 0.8rem;
+    top: 11px;
+    line-height: 1;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 96px;
+  }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ui);
+    font-size: 0.74rem;
+    color: var(--grey);
+  }
+  .footer-inner a { color: var(--grey); }
+  .footer-inner a:hover { color: var(--green); text-decoration: none; }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="index.html">Pack Light</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="post-header">
+    <div class="post-meta-top">Last updated: 30 April 2026</div>
+    <h1 class="post-title-large">Privacy Policy</h1>
+  </div>
+
+  <div class="page-body">
+
+    <div class="section">
+      <p>Pack Light is run by an Australian sole trader (ABN 38 712 904 653). This page explains what data the site collects, why, and what happens to it. Plain language, no legal padding.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">What I collect directly</div>
+      <p>The only data I collect directly from you is what you type into the contact form: your name and your message. I don't run any analytics, mailing list, or tracker of my own.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Contact form</div>
+      <p>Form submissions are handled by FormSubmit (formsubmit.co), a third-party service that forwards messages to my email. FormSubmit briefly processes your submission to deliver it. Their privacy practices are at <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener">formsubmit.co/privacy</a>.</p>
+      <p>Messages land in my personal inbox (Outlook). I keep them only as long as needed to respond, then archive or delete. I don't share them with anyone.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Cookies and Google AdSense</div>
+      <p>This site uses Google AdSense to display ads. AdSense and its partners may set cookies on your browser to:</p>
+      <ul>
+        <li>Show ads relevant to your interests</li>
+        <li>Limit how often you see the same ad</li>
+        <li>Measure ad performance</li>
+      </ul>
+      <p>I don't see who you are personally — just aggregate ad performance numbers. You can opt out of personalised ads at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">google.com/settings/ads</a> or from third-party vendors at <a href="https://www.aboutads.info" target="_blank" rel="noopener">aboutads.info</a>.</p>
+      <p>Google's full advertising privacy policy is at <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Hosting</div>
+      <p>The site is hosted on GitHub Pages. GitHub may collect basic server logs (IP address, browser, referring page) for security and abuse prevention. Their privacy statement is at <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a>.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Your rights under Australian privacy law</div>
+      <p>This site operates under the Australian Privacy Principles (APPs) in the Privacy Act 1988. You can ask me what data I hold about you, ask me to correct it, or ask me to delete it. Contact me via the form and I'll respond within a reasonable time.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Children</div>
+      <p>This site isn't aimed at people under 16. I don't knowingly collect data from minors. If you believe a child has submitted information, contact me and I'll delete it.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Updates to this policy</div>
+      <p>If I change anything material, I'll update the "Last updated" date at the top of this page. The current version is the only one in force.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Contact</div>
+      <p>Questions about this policy: use the <a href="contact.html">contact form</a>.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Pack Light</span>
+    <span><a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="post-country" content="Thailand">
+<meta name="post-country-slug" content="thailand">
+<meta name="post-type" content="travel">
+<meta name="post-region" content="Northern Thailand">
+<title>Chiang Dao, Thailand — Pack Light</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #4a7c59;
+    --green-dark: #3d6849;
+    --green-bg: #f0f5f1;
+    --grey: #767676;
+    --rule: #e2e2e2;
+    --max: 680px;
+    --body: Georgia, 'Times New Roman', serif;
+    --ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  html { font-size: 17px; }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-family: var(--body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--rule);
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-name {
+    font-family: var(--ui);
+    font-weight: 700;
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    text-decoration: none;
+  }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    font-family: var(--ui);
+    font-size: 0.82rem;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  nav a:hover, nav a.active { color: var(--green); }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── AD ── */
+  .ad-placeholder {
+    border: 1.5px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #bbb;
+    width: 100%;
+  }
+  .ad-leader { height: 90px; }
+  .ad-rect { height: 250px; margin: 48px 0; }
+
+  /* ── FOOTER ── */
+  footer { border-top: 1px solid var(--rule); margin-top: 96px; }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ui);
+    font-size: 0.74rem;
+    color: var(--grey);
+  }
+  .footer-inner a { color: var(--grey); }
+  .footer-inner a:hover { color: var(--green); text-decoration: none; }
+
+  /* ── POST PAGE ── */
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--ui);
+    font-size: 0.79rem;
+    color: var(--grey);
+    text-decoration: none;
+    margin: 28px 0 0;
+  }
+  .back-btn:hover { color: var(--green); text-decoration: none; }
+
+  .post-header { padding: 32px 0 32px; border-bottom: 1px solid var(--rule); margin-bottom: 32px; }
+
+  .post-meta-top {
+    font-family: var(--ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--grey);
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+  .post-meta-top .region { color: var(--green); }
+
+  /* Tag pills — same chip pattern as browse page filters */
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .tag-pill {
+    font-family: var(--ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    padding: 4px 11px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: #fff;
+    color: #444;
+    text-decoration: none;
+    transition: all 0.15s;
+    line-height: 1.3;
+  }
+  .tag-pill:hover {
+    border-color: var(--green);
+    color: var(--green);
+    text-decoration: none;
+  }
+
+  h1.post-title-large {
+    font-size: 2.1rem;
+    font-weight: normal;
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+  }
+
+  /* Photo placeholder */
+  .photo-ph {
+    width: 100%;
+    height: 380px;
+    margin-bottom: 36px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      #ececec 0px, #ececec 2px,
+      #f6f6f6 2px, #f6f6f6 12px
+    );
+    border: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .photo-ph p {
+    font-family: var(--ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #b0b0b0;
+  }
+
+  /* Post figure — replaces .photo-ph when filling in a post.
+     See design-elements.md §5 "Post figure". */
+  .post-figure { margin: 0 0 36px; }
+  .post-figure-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .post-figure-caption {
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--grey);
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* Quick Facts */
+  .quick-facts {
+    border-left: 3px solid var(--green);
+    background: #f7f9f7;
+    padding: 18px 22px;
+    margin-bottom: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 40px;
+    align-items: flex-start;
+  }
+  .quick-facts-label {
+    font-family: var(--ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .qf-key {
+    font-family: var(--ui);
+    font-size: 0.67rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--grey);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .qf-val {
+    font-family: var(--ui);
+    font-size: 0.88rem;
+    color: #111;
+    font-weight: 500;
+  }
+
+  /* Sections */
+  .section { margin-bottom: 44px; }
+  .section-heading {
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #111;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .section p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 18px;
+  }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul { list-style: none; padding: 0; margin: 0; }
+  .section ul li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    color: #1a1a1a;
+  }
+  .section ul li:last-child { border-bottom: none; }
+  .section ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 0.8rem;
+    top: 11px;
+    line-height: 1;
+  }
+  .section .note {
+    font-size: 0.92rem;
+    color: var(--grey);
+    margin-top: 18px;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  .section .note strong {
+    color: #111;
+    font-weight: 600;
+  }
+
+  /* Costs table */
+  table.costs {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  table.costs th {
+    font-family: var(--ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-align: left;
+    border-bottom: 1px solid #111;
+    padding: 8px 0;
+    font-weight: 600;
+  }
+  table.costs th:last-child { text-align: right; }
+  table.costs td {
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+    line-height: 1.5;
+    vertical-align: top;
+  }
+  table.costs td:last-child {
+    text-align: right;
+    font-family: var(--ui);
+    font-feature-settings: 'tnum';
+    color: #333;
+  }
+  table.costs tr.total td {
+    border-top: 1px solid #111;
+    border-bottom: none;
+    font-weight: 700;
+    padding-top: 14px;
+    font-family: var(--ui);
+  }
+  table.costs tr.total td:last-child { color: #111; }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="../index.html">Pack Light</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../browse.html">Browse</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <a class="back-btn" href="../index.html">← All posts</a>
+
+  <!-- ──────────────── POST HEADER ──────────────── -->
+  <div class="post-header">
+    <div class="post-meta-top">
+      <span class="region">Northern Thailand</span>
+      <span>2 Mar 2026</span>
+    </div>
+    <div class="post-tags">
+      <a class="tag-pill" href="../browse.html?country=thailand">Thailand</a>
+      <a class="tag-pill" href="../browse.html?type=travel">Travel</a>
+    </div>
+    <h1 class="post-title-large">Chiang Dao, Thailand</h1>
+  </div>
+
+  <!-- ──────────────── PHOTO PLACEHOLDER — HERO ────────────────
+       Replace this entire <div> with a <figure class="post-figure"> block
+       when images are available. loading="eager". -->
+  <div class="photo-ph">
+    <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
+      <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
+      <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
+      <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    <p>Doi Chiang Dao mountain from the rice fields</p>
+  </div>
+
+  <!-- ──────────────── QUICK FACTS ──────────────── -->
+  <div class="quick-facts">
+    <span class="quick-facts-label">Quick Facts</span>
+    <div class="qf-item"><span class="qf-key">Trip style</span><span class="qf-val">Slow mountain town / nature base</span></div>
+    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">2–4 days</span></div>
+    <div class="qf-item"><span class="qf-key">Per day cost</span><span class="qf-val">~1,200–1,500 THB</span></div>
+    <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">Nov – Feb</span></div>
+  </div>
+
+  <!-- ──────────────── OVERVIEW ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Overview</div>
+    <p>Chiang Dao is one of the easiest escapes from Chiang Mai if you want mountains, quiet roads and a slower pace without going completely remote. The town sits about 1.5–2 hours north of Chiang Mai and feels far less touristy than Pai. Most people come for the huge limestone mountain, caves, hot springs and cafés with rice field views.</p>
+    <p>I based myself here for a few days and spent most of the trip walking around cafés, riding a scooter between villages and doing short hikes around the mountain area. It works well as a low-cost nature break if you are already in northern Thailand.</p>
+    <p>Costs were noticeably lower than Chiang Mai. I spent around 1,200–1,500 THB per day staying in a basic private room, renting a scooter and eating mostly local Thai food and café meals.</p>
+  </div>
+
+  <!-- ──────────────── NEED TO KNOW ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Need to Know</div>
+    <ul>
+      <li>Burning season usually runs from February to April. Air quality can get very poor and mountain views may disappear completely.</li>
+      <li>Nights can get surprisingly cold between December and January, especially near the mountain.</li>
+      <li>You will want a scooter here. Public transport inside Chiang Dao is limited and attractions are spread out.</li>
+      <li>Mobile coverage is generally good in town but weaker around mountain roads and villages.</li>
+      <li>Some cave sections at Chiang Dao Cave may close during heavy rain periods.</li>
+      <li>Most cafés and guesthouses are cash-focused. Carry cash as ATMs are not everywhere once outside town.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── WHAT TO DO ──────────────── -->
+  <div class="section">
+    <div class="section-heading">What to Do</div>
+    <ul>
+      <li><strong>Chiang Dao Cave</strong> is the main attraction in town. The entrance chambers are lit and easy to explore alone, while deeper cave sections require a local guide carrying a lantern. Entry is around 40–50 THB for the main cave areas.</li>
+      <li><strong>Doi Chiang Dao viewpoints</strong> are the highlight of the region. The mountain dominates the entire valley and looks best around sunrise when mist sits over the rice fields. Several cafés and accommodation spots around town are built specifically around the view.</li>
+      <li><strong>Wat Tham Pha Plong</strong> is a peaceful forest temple reached via a stair climb through jungle. The walk takes around 20–30 minutes uphill and is one of the nicest short walks in the area.</li>
+      <li><strong>Sri Sangwan Waterfall</strong> is a small but easy waterfall stop not far from town. It works well as a quick scooter detour during a hot afternoon.</li>
+      <li><strong>Hot springs</strong> around Chiang Dao are scattered across the countryside. Some are simple local-style pools while others are attached to resorts or campgrounds.</li>
+      <li><strong>Café hopping</strong> around the rice fields is one of the best things to do here. Many cafés have open mountain views, outdoor decks and quiet surroundings that make it easy to spend a few hours relaxing.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── PHOTO PLACEHOLDER — GETTING THERE ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
+  <div class="photo-ph">
+    <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
+      <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
+      <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
+      <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    <p>Transport or arrival photo caption</p>
+  </div>
+
+  <!-- ──────────────── GETTING THERE ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Getting There</div>
+    <ul>
+      <li>Local bus from Chang Phueak Bus Terminal in Chiang Mai: 90–150 THB, around 2 hours.</li>
+      <li>Minivan from Chiang Mai is slightly faster and usually costs 150–250 THB.</li>
+      <li>Scooter from Chiang Mai is popular. The route north is straightforward and mostly follows Highway 107.</li>
+      <li>Private taxi from Chiang Mai costs roughly 1,500–2,500 THB depending on negotiation and vehicle size.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── GETTING AROUND ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Getting Around</div>
+    <ul>
+      <li>Scooter rental is the best option at 250–350 THB per day. The main roads are sealed and easy to ride, though some village roads become steep or rough.</li>
+      <li>Songthaews operate around town but are infrequent for sightseeing.</li>
+      <li>Cycling is possible and the scenery is excellent, though afternoons can get very hot outside cool season.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── WHERE TO STAY ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Where to Stay</div>
+    <ul>
+      <li>Mountain-view guesthouses around the rice fields cost 600–1,500 THB for simple private rooms or bungalows. Staying slightly outside town gives much better sunrise views and quieter surroundings.</li>
+      <li>Budget hostels and backpacker-style stays in town start around 300–500 THB for dorms or fan rooms.</li>
+      <li>Eco lodges and glamping-style stays are increasingly common around Chiang Dao and generally cost 1,500–3,000 THB per night.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── PHOTO PLACEHOLDER — EAT AND DRINK ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
+  <div class="photo-ph">
+    <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
+      <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
+      <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
+      <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    <p>Food or market photo caption</p>
+  </div>
+
+  <!-- ──────────────── EAT AND DRINK ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Eat and Drink</div>
+    <ul>
+      <li>Local Thai restaurants around the market area serve meals for 50–90 THB. Northern Thai dishes like khao soi and grilled meats are common.</li>
+      <li>Cafés around the mountain viewpoints usually charge 70–120 THB for coffee and 120–250 THB for meals.</li>
+      <li>Fresh fruit smoothies are everywhere and cost around 40–70 THB.</li>
+      <li>Night markets and roadside stalls are good for cheap dinners and snacks without needing reservations.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── PHOTO PLACEHOLDER — DAY HIKES / TRIPS AND WALKS ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
+  <div class="photo-ph">
+    <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
+      <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
+      <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
+      <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    <p>Day trip photo caption</p>
+  </div>
+
+  <!-- ──────────────── DAY HIKES / TRIPS AND WALKS ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Day Hikes / Trips and Walks</div>
+    <ul>
+      <li><strong>Wat Tham Pha Plong Walk</strong> is the easiest short nature walk in Chiang Dao. The staircase climb through jungle takes around 30 minutes each way and is suitable for most fitness levels.</li>
+      <li><strong>Doi Luang Chiang Dao Wildlife Sanctuary trek</strong> is the serious hike in the region. Access is controlled and usually requires advance booking and a guide. The overnight trek is difficult but one of Thailand's best mountain hikes.</li>
+      <li><strong>Chiang Dao countryside loop</strong> is a good scooter or cycling day trip through rice fields, villages and cafés west of town. Minimal traffic and mountain views the entire way.</li>
+      <li><strong>Arunothai village</strong> near the Myanmar border makes a quieter half-day trip with tea plantations and Yunnanese food. Around 45–60 minutes by scooter from Chiang Dao.</li>
+      <li><strong>Sticky Waterfall (Bua Tong Falls)</strong> can be visited on the drive between Chiang Mai and Chiang Dao. The limestone surface gives enough grip to walk directly up the waterfall.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── COSTS ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Costs</div>
+    <table class="costs">
+      <thead>
+        <tr><th>Item</th><th>THB</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bus from Chiang Mai</td><td>150</td></tr>
+        <tr><td>Scooter rental</td><td>300</td></tr>
+        <tr><td>Guesthouse private room</td><td>900</td></tr>
+        <tr><td>Food and coffee</td><td>450</td></tr>
+        <tr><td>Chiang Dao Cave entry</td><td>50</td></tr>
+        <tr><td>Fuel</td><td>100</td></tr>
+        <tr class="total"><td>Daily total</td><td>1,950</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ──────────────── AD ──────────────── -->
+  <div class="ad-placeholder ad-rect">Advertisement</div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Pack Light</span>
+    <span><a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
