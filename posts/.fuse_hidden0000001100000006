@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="post-country" content="Indonesia">
-<meta name="post-country-slug" content="indonesia">
+<meta name="post-country" content="New Zealand">
+<meta name="post-country-slug" content="new-zealand">
 <meta name="post-type" content="travel">
-<meta name="post-region" content="Nusa Tenggara, Indonesia">
-<title>Lombok, Indonesia — Oreadis</title>
+<meta name="post-region" content="South Island, NZ">
+<title>Mount Cook National Park, New Zealand — Pack Light</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -340,7 +340,7 @@
 
 <header>
   <div class="header-inner">
-    <a class="site-name" href="../index.html">Oreadis</a>
+    <a class="site-name" href="../index.html">Pack Light</a>
     <nav>
       <a href="../index.html">Home</a>
       <a href="../browse.html">Browse</a>
@@ -355,53 +355,54 @@
   <!-- ──────────────── POST HEADER ──────────────── -->
   <div class="post-header">
     <div class="post-meta-top">
-      <span class="region">Nusa Tenggara, Indonesia</span>
-      <span>1 Aug 2025</span>
+      <span class="region">South Island, NZ</span>
+      <span>7 Dec 2025</span>
     </div>
     <div class="post-tags">
-      <a class="tag-pill" href="../browse.html?country=indonesia">Indonesia</a>
+      <a class="tag-pill" href="../browse.html?country=new-zealand">New Zealand</a>
       <a class="tag-pill" href="../browse.html?type=travel">Travel</a>
     </div>
-    <h1 class="post-title-large">Lombok, Indonesia</h1>
+    <h1 class="post-title-large">Mount Cook National Park, New Zealand</h1>
   </div>
 
-  <!-- ──────────────── HERO PHOTO PLACEHOLDER ──────────────── -->
+  <!-- ──────────────── PHOTO PLACEHOLDER — HERO ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="eager". -->
   <div class="photo-ph">
     <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
       <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
       <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
       <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
     </svg>
-    <p>Hero photo — Lombok</p>
+    <p>Hero photo caption</p>
   </div>
 
   <!-- ──────────────── QUICK FACTS ──────────────── -->
   <div class="quick-facts">
     <span class="quick-facts-label">Quick Facts</span>
-    <div class="qf-item"><span class="qf-key">Trip style</span><span class="qf-val">Beach town / scooter base</span></div>
-    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">5–7 days</span></div>
-    <div class="qf-item"><span class="qf-key">Per day cost</span><span class="qf-val">~450,000–750,000 IDR</span></div>
-    <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">May – Sep</span></div>
+    <div class="qf-item"><span class="qf-key">Trip style</span><span class="qf-val">Alpine hiking and scenic road trip</span></div>
+    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">2–4 days</span></div>
+    <div class="qf-item"><span class="qf-key">Per day cost</span><span class="qf-val">~220 NZD</span></div>
+    <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">Nov – Apr</span></div>
   </div>
 
   <!-- ──────────────── OVERVIEW ──────────────── -->
   <div class="section">
     <div class="section-heading">Overview</div>
-    <p>I spent a week in Lombok using Kuta as a base and doing a mix of beach days, scooter rides, waterfalls, surfing, and short hikes. Lombok feels slower than Bali. Roads are quieter, accommodation is cheaper, and it is easier to find empty beaches outside the main tourist areas.</p>
-    <p>The south coast around Kuta works well for independent travellers. Most places are within 20–40 minutes by scooter, food is cheap, and there are enough cafes and guesthouses without feeling overdeveloped. Senggigi and the Gili Islands are more resort-oriented, but still easy to visit if you have extra time.</p>
-    <p>I averaged around 600,000 IDR per day including scooter rental, private room accommodation, local food, and activities. Costs rise quickly if you stay on the Gilis or book private drivers every day.</p>
+    <p>Mount Cook National Park is one of the easiest alpine areas in New Zealand to access without needing serious mountaineering experience. I based myself in Mount Cook Village for 3 nights and spent most of the trip hiking, walking around the glacier lakes, and watching the weather change around the Southern Alps.</p>
+    <p>The scenery feels much bigger and rougher than Queenstown or Wanaka. Huge glacier valleys, fast-changing weather, and steep rock walls everywhere. Even short walks feel dramatic here. Most people come for the Hooker Valley Track, but there are enough day hikes and viewpoints to comfortably fill 2–4 days.</p>
+    <p>I spent around 220 NZD per day including hostel accommodation, food, fuel, and activities. It is easy to do cheaper with a campervan or by cooking all your meals.</p>
   </div>
 
   <!-- ──────────────── NEED TO KNOW ──────────────── -->
   <div class="section">
     <div class="section-heading">Need to Know</div>
     <ul>
-      <li>Most travellers arrive through Lombok International Airport near Praya. The airport is around 30–40 minutes from Kuta by car.</li>
-      <li>Dry season from May to September is the best time to visit. October to March can bring heavy afternoon rain and rougher seas.</li>
-      <li>A scooter is the easiest way to explore southern Lombok. Roads are generally good around Kuta, but some beach access roads are steep or rough.</li>
-      <li>ATMs are common in Kuta and Senggigi but less reliable on smaller islands and in rural areas. Carry cash for warungs and local entrance fees.</li>
-      <li>Mobile reception is good around Kuta and Senggigi. Telkomsel had the best coverage once outside town.</li>
-      <li>Mount Rinjani hikes normally require advance booking during peak season. Weather cancellations happen regularly during the wet season.</li>
+      <li>Weather changes fast even in summer. A clear morning can turn into rain, wind, or low cloud by afternoon. Check forecasts daily and build flexibility into your plans.</li>
+      <li>Accommodation inside Mount Cook Village books out early during summer and long weekends. Book several weeks ahead if travelling December through February.</li>
+      <li>There is almost no supermarket shopping once you leave Twizel. Buy groceries and fuel before entering the park — there is no petrol station inside Mount Cook Village.</li>
+      <li>Mobile reception is limited inside the national park. Some tracks have no signal at all.</li>
+      <li>Sandflies are common near water and around sunset. Bring repellent.</li>
+      <li>Hooker Valley Track gets crowded from mid-morning onwards. Start before 8 AM for quieter conditions and easier parking.</li>
     </ul>
   </div>
 
@@ -409,34 +410,35 @@
   <div class="section">
     <div class="section-heading">What to Do</div>
     <ul>
-      <li><strong>Tanjung Aan Beach</strong> is one of the easiest beach stops from Kuta. White sand, calm water, and a few simple beach cafes. Around 20 minutes by scooter from town. Go early before the day-trip crowds arrive.</li>
-      <li><strong>Bukit Merese</strong> is the main sunset hill near Kuta. Short 10–15 minute walk from the parking area. The views over Tanjung Aan and the coastline are better than the walk itself. Bring water — there is little shade.</li>
-      <li><strong>Selong Belanak Beach</strong> is the easiest surf beach for beginners in southern Lombok. Board rental and lessons are available directly on the sand. Around 45–60 minutes from Kuta depending on traffic and road conditions.</li>
-      <li><strong>Benang Stokel and Benang Kelambu Waterfalls</strong> make a good inland day trip. The waterfalls sit around 1.5–2 hours north of Kuta by scooter. Expect short jungle walks, stairs, and wet paths. Entry and parking combined were roughly 50,000–80,000 IDR.</li>
-      <li><strong>Pink Beach</strong> on the southeast coast is quieter than the beaches around Kuta. The drive takes around 2 hours each way, partly on rough roads. Better as a full-day scooter ride or private driver trip.</li>
-      <li><strong>Gili Islands</strong> are easy to visit from Lombok. Fast boats run from Bangsal Harbour to Gili Trawangan, Gili Air, and Gili Meno. Gili Air felt the most balanced — quieter than Gili Trawangan but with enough cafes and guesthouses for a few nights.</li>
-      <li><strong>Mount Rinjani</strong> is Lombok's biggest draw for hikers. Most treks are 2 days / 1 night or 3 days / 2 nights. Summit routes involve long steep climbs, cold overnight temperatures, and early alpine starts. Even fit hikers should expect a tough climb above 2,500 m.</li>
+      <li><strong>Hooker Valley Track</strong> is the classic walk in the park. The return hike is around 10 km with roughly 150 m elevation gain and takes 2.5–3.5 hours. The track crosses three suspension bridges and finishes at Hooker Lake with views of Aoraki / Mount Cook. Go early or late in the day to avoid crowds.</li>
+      <li><strong>Sealy Tarns Track</strong> is the hardest short hike accessible from the village. The return walk is roughly 5.8 km with around 600 m elevation gain almost entirely on stairs. Expect 2–4 hours depending on fitness. The viewpoint looks directly over Mueller Glacier and the Hooker Valley.</li>
+      <li><strong>Mueller Hut Route</strong> is a serious full-day hike or overnight option for fit hikers. The return trip is around 14 km with roughly 1,050 m elevation gain and takes 6–8 hours. The final section is rocky and exposed in bad weather. Snow can remain well into summer.</li>
+      <li><strong>Tasman Glacier View Track</strong> is a short 20-minute walk to viewpoints over Tasman Lake and the glacier terminal face. You can often see small icebergs floating in the lake.</li>
+      <li><strong>Blue Lakes and Tasman Lake</strong> are easy walks near the Tasman Glacier car park. The lakes are now mostly filled with sediment but the area gives good glacier valley views and access to the lakeshore.</li>
+      <li><strong>Kea Point Track</strong> is a quieter alternative to Hooker Valley. The return walk is around 3 km and takes about 1 hour, with views over Mueller Glacier Lake.</li>
+      <li><strong>Stargazing</strong> around Mount Cook Village is excellent on clear nights. The area sits inside the Aoraki Mackenzie International Dark Sky Reserve, one of the darkest sky reserves in the world.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── PHOTO PLACEHOLDER — GETTING THERE ──────────────── -->
+  <!-- ──────────────── PHOTO PLACEHOLDER — GETTING THERE ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
   <div class="photo-ph">
     <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
       <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
       <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
       <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
     </svg>
-    <p>Transport or arrival photo</p>
+    <p>Transport or arrival photo caption</p>
   </div>
 
   <!-- ──────────────── GETTING THERE ──────────────── -->
   <div class="section">
     <div class="section-heading">Getting There</div>
     <ul>
-      <li>Flights from Bali to Lombok take around 40 minutes. Budget airlines regularly operate the route for around 600,000–1,500,000 IDR return depending on season.</li>
-      <li>Public ferries from Padang Bai in Bali to Lembar Port in Lombok take 4–6 hours and cost roughly 70,000–90,000 IDR per person. Slow but cheap.</li>
-      <li>Fast boats from Bali to Lombok or the Gili Islands usually take 1.5–3 hours depending on sea conditions and departure point. Prices vary between 300,000–800,000 IDR.</li>
-      <li>Lombok International Airport is connected to Jakarta, Bali, Surabaya, Kuala Lumpur, and Singapore.</li>
+      <li>Driving from Queenstown takes around 3.5–4 hours via Lindis Pass and Twizel. Fuel up in Twizel before the final stretch — there is no petrol station inside the village.</li>
+      <li>Driving from Christchurch takes around 4.5 hours.</li>
+      <li>The drive along Mount Cook Road beside Lake Pukaki is one of the best road sections in New Zealand. Allow extra time for stops.</li>
+      <li>Intercity and GreatSights buses run services to Mount Cook Village from Christchurch and Queenstown, though services can be limited outside peak season.</li>
     </ul>
   </div>
 
@@ -444,11 +446,10 @@
   <div class="section">
     <div class="section-heading">Getting Around</div>
     <ul>
-      <li>Scooter rental is the standard way to get around southern Lombok. Expect around 80,000–120,000 IDR per day for a basic automatic scooter.</li>
-      <li>Fuel is cheap and easy to find around Kuta. Most local roadside bottles cost around 15,000–20,000 IDR per litre.</li>
-      <li>Grab and Gojek are limited outside airport areas and larger towns. Do not rely on rideshare apps once outside Kuta or Senggigi.</li>
-      <li>Private drivers are common for waterfall trips and airport transfers. Full-day hire normally costs around 600,000–900,000 IDR.</li>
-      <li>Shuttle vans run between Kuta, Senggigi, Bangsal Harbour, and the airport. Slower than private transport but useful if travelling solo.</li>
+      <li>A car is the easiest option. Most trailheads are within a 5–15 minute drive from Mount Cook Village.</li>
+      <li>The village itself is walkable — the main visitor centre, accommodation, and several tracks connect directly from town.</li>
+      <li>Parking at Hooker Valley and Tasman Glacier fills quickly from late morning in peak season. Arrive early or expect a walk from overflow areas.</li>
+      <li>Hitchhiking between trailheads is fairly common during summer due to limited parking and a cooperative atmosphere among hikers.</li>
     </ul>
   </div>
 
@@ -456,51 +457,51 @@
   <div class="section">
     <div class="section-heading">Where to Stay</div>
     <ul>
-      <li>Kuta is the best overall base for independent travellers. Plenty of guesthouses, surf hostels, cafes, and scooter rental shops. Dorm beds start around 120,000–180,000 IDR and private rooms around 300,000–700,000 IDR.</li>
-      <li>Senggigi works better for shorter holidays or travellers wanting easier beach access without scooters. Accommodation is more resort-focused. Mid-range hotels generally start around 700,000 IDR.</li>
-      <li>Gili Air and Gili Trawangan suit slower beach stays and snorkelling trips. Prices rise noticeably during weekends and holidays. Budget bungalows start around 350,000 IDR.</li>
+      <li>Mount Cook Village has hostels, lodges, and hotel-style accommodation. Expect roughly 50–80 NZD for hostel dorms and 250+ NZD for private hotel rooms in summer.</li>
+      <li>White Horse Hill Campground is the main camping option, near the Hooker Valley Track trailhead. Facilities are basic but the location is excellent for early starts.</li>
+      <li>Twizel is a cheaper base around 50 minutes away with more supermarkets, fuel, and budget accommodation. Useful if the village is fully booked.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── PHOTO PLACEHOLDER — EAT AND DRINK ──────────────── -->
+  <!-- ──────────────── PHOTO PLACEHOLDER — EAT AND DRINK ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
   <div class="photo-ph">
     <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
       <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
       <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
       <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
     </svg>
-    <p>Food or market photo</p>
+    <p>Food or market photo caption</p>
   </div>
 
   <!-- ──────────────── EAT AND DRINK ──────────────── -->
   <div class="section">
     <div class="section-heading">Eat and Drink</div>
     <ul>
-      <li>Local warungs around Kuta serve nasi campur, mie goreng, grilled chicken, and seafood for around 25,000–60,000 IDR.</li>
-      <li>Fresh seafood barbecue is common near beach areas and night markets. Simple grilled fish meals usually cost around 80,000–150,000 IDR.</li>
-      <li>Cafes in Kuta cater heavily to surfers and remote workers. Coffee costs around 25,000–40,000 IDR and western brunch meals around 70,000–120,000 IDR.</li>
-      <li>Small roadside stalls are often the cheapest option for snacks, fried rice, grilled corn, and fruit juices.</li>
+      <li>Most people self-cater here because dining options are limited and expensive. Stock up on groceries in Twizel before arriving — there are only small convenience-style stores inside the park.</li>
+      <li>Café meals inside Mount Cook Village run around 20–35 NZD and restaurant mains around 35–50 NZD. The Hermitage complex has the largest concentration of restaurants and cafés in the area.</li>
+      <li>Coffee costs around 6 NZD at most spots in the village.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── PHOTO PLACEHOLDER — DAY HIKES / TRIPS ──────────────── -->
+  <!-- ──────────────── PHOTO PLACEHOLDER — DAY HIKES / TRIPS ────────────────
+       Replace with <figure class="post-figure"> when images available. loading="lazy". -->
   <div class="photo-ph">
     <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
       <rect x="1" y="1" width="40" height="34" rx="1" stroke="#bbb" stroke-width="1.5"/>
       <circle cx="14" cy="13" r="4.5" stroke="#bbb" stroke-width="1.5"/>
       <path d="M1 26 L13 15 L23 23 L30 17 L41 27" stroke="#bbb" stroke-width="1.5" stroke-linejoin="round"/>
     </svg>
-    <p>Day-trip photo</p>
+    <p>Day-trip photo caption</p>
   </div>
 
   <!-- ──────────────── DAY HIKES / TRIPS AND WALKS ──────────────── -->
   <div class="section">
     <div class="section-heading">Day Hikes / Trips and Walks</div>
     <ul>
-      <li><strong>Bukit Pergasingan</strong> is a good overnight or sunrise hike near Sembalun. Around 2–3 hours to the summit with roughly 700 m elevation gain. Best done before or after a Mount Rinjani trek.</li>
-      <li><strong>Tetebatu Rice Fields</strong> make an easy slower-paced day trip from Kuta or Senggigi. Expect village walks, rice terraces, small waterfalls, and local coffee farms. Around 2 hours by road from Kuta.</li>
-      <li><strong>Sendang Gile and Tiu Kelep Waterfalls</strong> near Senaru are more dramatic than the southern waterfalls but require a longer drive. The walk includes river crossings and slippery rocks.</li>
-      <li><strong>Secret Gilis</strong> off southwest Lombok are quieter than the main Gili Islands. Better for snorkelling and slower beach days. Boats usually depart from Sekotong.</li>
+      <li><strong>Red Tarns Track</strong> is a shorter alternative to Sealy Tarns. The return walk is around 2 km with roughly 300 m elevation gain and takes 1–2 hours.</li>
+      <li><strong>Lake Pukaki shoreline stops</strong> along Mount Cook Road are worth doing on the drive in or out. The bright blue glacial water looks best in full sun — allow extra time for a proper stop rather than a drive-by.</li>
+      <li><strong>Tasman Glacier Lake boat tours</strong> run seasonally and get close to floating glacier icebergs. Expensive but a different experience from the walking viewpoints if conditions are good.</li>
     </ul>
   </div>
 
@@ -509,20 +510,17 @@
     <div class="section-heading">Costs</div>
     <table class="costs">
       <thead>
-        <tr><th>Item</th><th>IDR</th></tr>
+        <tr><th>Item</th><th>NZD</th></tr>
       </thead>
       <tbody>
-        <tr><td>Hostel dorm</td><td>120,000–180,000</td></tr>
-        <tr><td>Private guesthouse room</td><td>300,000–700,000</td></tr>
-        <tr><td>Scooter rental</td><td>80,000–120,000</td></tr>
-        <tr><td>Fuel per day</td><td>30,000–50,000</td></tr>
-        <tr><td>Local meals</td><td>25,000–60,000</td></tr>
-        <tr><td>Cafe meal</td><td>70,000–120,000</td></tr>
-        <tr><td>Airport transfer</td><td>150,000–250,000</td></tr>
-        <tr><td>Waterfall entry fees</td><td>20,000–80,000</td></tr>
-        <tr><td>Surf lesson + board</td><td>150,000–300,000</td></tr>
-        <tr><td>Fast boat from Bali</td><td>300,000–800,000</td></tr>
-        <tr class="total"><td>Daily total</td><td>~450,000–750,000</td></tr>
+        <tr><td>Hostel dorm</td><td>60</td></tr>
+        <tr><td>Campground</td><td>20</td></tr>
+        <tr><td>Café meal</td><td>25</td></tr>
+        <tr><td>Restaurant dinner</td><td>40</td></tr>
+        <tr><td>Coffee</td><td>6</td></tr>
+        <tr><td>Fuel from Queenstown return</td><td>90</td></tr>
+        <tr><td>DOC hut / campsite fees</td><td>0–45</td></tr>
+        <tr class="total"><td>Daily total</td><td>~220</td></tr>
       </tbody>
     </table>
   </div>
@@ -534,7 +532,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Oreadis</span>
+    <span>© 2026 Pack Light</span>
     <span><a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a></span>
   </div>
 </footer>

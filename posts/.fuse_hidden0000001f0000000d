@@ -7,7 +7,7 @@
 <meta name="post-country-slug" content="new-zealand">
 <meta name="post-type" content="hike">
 <meta name="post-region" content="South Island, NZ">
-<title>Ben Lomond Summit Track, Queenstown — Oreadis</title>
+<title>Kepler Track, Fiordland National Park — Pack Light</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -165,33 +165,7 @@
     letter-spacing: -0.015em;
   }
 
-  /* Photo placeholder */
-  .photo-ph {
-    width: 100%;
-    height: 380px;
-    margin-bottom: 36px;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      #ececec 0px, #ececec 2px,
-      #f6f6f6 2px, #f6f6f6 12px
-    );
-    border: 1px solid #e8e8e8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .photo-ph p {
-    font-family: var(--ui);
-    font-size: 0.7rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #b0b0b0;
-  }
-
-  /* Post figure — replaces .photo-ph when filling in a post.
-     See design-elements.md §5 "Post figure". */
+  /* Post figure — see design-elements.md §5 "Post figure" */
   .post-figure { margin: 0 0 36px; }
   .post-figure-img {
     width: 100%;
@@ -295,7 +269,7 @@
     font-weight: 600;
   }
 
-  /* Daily stats table — HIKE posts only */
+  /* Daily stats table */
   .table-wrap {
     overflow-x: auto;
     margin: 0 -2px;
@@ -384,7 +358,7 @@
 
 <header>
   <div class="header-inner">
-    <a class="site-name" href="../index.html">Oreadis</a>
+    <a class="site-name" href="../index.html">Pack Light</a>
     <nav>
       <a href="../index.html">Home</a>
       <a href="../browse.html">Browse</a>
@@ -396,153 +370,180 @@
 <main>
   <a class="back-btn" href="../index.html">← All posts</a>
 
-  <!-- ──────────────── POST HEADER ──────────────── -->
   <div class="post-header">
     <div class="post-meta-top">
       <span class="region">South Island, NZ</span>
-      <span>1 Dec 2025</span>
+      <span>20 Nov 2025</span>
     </div>
     <div class="post-tags">
       <a class="tag-pill" href="../browse.html?country=new-zealand">New Zealand</a>
       <a class="tag-pill" href="../browse.html?type=hike">Hike</a>
     </div>
-    <h1 class="post-title-large">Ben Lomond Summit Track, Queenstown</h1>
+    <h1 class="post-title-large">Kepler Track, Fiordland National Park</h1>
   </div>
 
-  <!-- ──────────────── HERO FIGURE ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-1.webp"
-         alt="Queenstown in the Background Before Ben Lomond Saddle"
+         src="../images/kepler-track-fiordland/kepler-track-fiordland-1.webp"
+         alt="Luxmore Hut, Kepler Track"
          width="1400" height="1050" loading="eager">
-    <figcaption class="post-figure-caption">Queenstown in the Background Before Ben Lomond Saddle</figcaption>
+    <figcaption class="post-figure-caption">Luxmore Hut, Kepler Track</figcaption>
   </figure>
 
-  <!-- ──────────────── QUICK FACTS ──────────────── -->
   <div class="quick-facts">
     <span class="quick-facts-label">Quick Facts</span>
-    <div class="qf-item"><span class="qf-key">Distance</span><span class="qf-val">14 km return</span></div>
-    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">6–8 hours</span></div>
-    <div class="qf-item"><span class="qf-key">Cost</span><span class="qf-val">$0 (free track)</span></div>
+    <div class="qf-item"><span class="qf-key">Distance</span><span class="qf-val">60 km loop</span></div>
+    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">3–4 days</span></div>
+    <div class="qf-item"><span class="qf-key">Total cost</span><span class="qf-val">~$140–$260 NZD</span></div>
     <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">Nov – Apr</span></div>
   </div>
 
-  <!-- ──────────────── OVERVIEW ──────────────── -->
   <div class="section">
     <div class="section-heading">Overview</div>
-    <p>This is the best day hike straight out of Queenstown. Big views, steep climbing, and no transport needed if you start from town. I did it as a long day hike and it felt like a proper alpine effort without needing overnight gear.</p>
-    <p>It's a steady grind up through forest, then exposed ridgeline walking to the summit. On a clear day, you get full views over Lake Wakatipu and the surrounding ranges. I spent around NZD 60–80 for the day including food and a post-hike meal.</p>
+    <p>The Kepler Track is one of New Zealand's Great Walks, but it's more accessible and flexible than something like the Milford Track. It's a 60 km loop starting near Te Anau, so logistics are simple — no expensive transfers to arrange.</p>
+    <p>I walked it over 3 days at a steady pace. The alpine ridge between Luxmore Hut and Iris Burn is the section that stands out — long stretches above the treeline with views across Fiordland. Weather changes fast and the ridge is fully exposed, but the track itself is well marked and technically easy.</p>
+    <p>Step up from day hikes here if you're comfortable with alpine terrain in changeable weather. Solid huts, clear trails, and enough sustained climbing to feel like a proper trip.</p>
   </div>
 
-  <!-- ──────────────── STATS AND ROUTE ────────────────
-       Single-day hike variant. Heading shortened from "Daily Stats and Route"
-       and bold-label bullets used for scannability — both per-post overrides
-       not currently in design-guidelines.md (user-approved). -->
   <div class="section">
-    <div class="section-heading">Stats and Route</div>
-    <ul>
-      <li><strong>Route:</strong> Queenstown → Tiki Trail → Skyline → Ben Lomond Saddle → Summit → return</li>
-      <li><strong>Distance:</strong> 14 km return</li>
-      <li><strong>Elevation:</strong> +1,450 m / −1,450 m</li>
-      <li><strong>Time:</strong> 6–8 hours</li>
-    </ul>
-    <p class="note"><strong>Alternative:</strong> Take the Skyline Gondola up to cut around 400 m of elevation off the climb.</p>
+    <div class="section-heading">Daily Stats and Route</div>
+    <div class="table-wrap">
+    <table class="daily-stats">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Route</th>
+          <th>Distance</th>
+          <th>Elevation</th>
+          <th>Time</th>
+          <th>Stay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Control Gates → Luxmore Hut</td>
+          <td class="num">13.8 km</td>
+          <td class="num">↑1,000 m</td>
+          <td class="num">5–6 hrs</td>
+          <td>Luxmore Hut</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Luxmore Hut → Iris Burn Hut</td>
+          <td class="num">16.2 km</td>
+          <td class="num">↑200&nbsp;&nbsp;↓1,000 m</td>
+          <td class="num">6–7 hrs</td>
+          <td>Iris Burn Hut</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Iris Burn Hut → Moturau Hut</td>
+          <td class="num">14.6 km</td>
+          <td class="num">↑300&nbsp;&nbsp;↓300 m</td>
+          <td class="num">5–6 hrs</td>
+          <td>Moturau Hut</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Moturau Hut → Rainbow Reach / Control Gates</td>
+          <td class="num">9.5–15 km</td>
+          <td class="num">flat</td>
+          <td class="num">3–5 hrs</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note"><strong>3-day alternative:</strong> skip Moturau Hut and combine Day 3 + 4 — a long ~24 km final day.</p>
   </div>
 
-  <!-- ──────────────── FIGURE — TRIP NOTES ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-2.webp"
-         alt="View of the Southern Alps"
+         src="../images/kepler-track-fiordland/kepler-track-fiordland-4.webp"
+         alt="Between Luxmore Hut and Iris Burn Hut"
          width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">View of the Southern Alps</figcaption>
+    <figcaption class="post-figure-caption">Between Luxmore Hut and Iris Burn Hut</figcaption>
   </figure>
 
-  <!-- ──────────────── TRIP NOTES / REPORT ──────────────── -->
   <div class="section">
     <div class="section-heading">Trip Notes / Report</div>
     <ul>
-      <li>Most people go up via the Tiki Trail — steep but shaded, good warm-up.</li>
-      <li>The hardest section is the saddle to summit — very steep, loose gravel, fully exposed.</li>
-      <li>The best section is the ridgeline — wide open views the whole way.</li>
-      <li>Weather changes fast — the summit can be windy even when town is calm.</li>
-      <li>Track is well-marked, but snow and ice in the shoulder seasons make it risky.</li>
-      <li>No water sources after Skyline — carry everything from the start.</li>
-      <li>Lots of kea (alpine parrots) near the saddle — they will go through your bag.</li>
+      <li>Walk anti-clockwise — Control Gates → Luxmore first. Gets the long climb done early and puts the alpine ridge on Day 2 when you're fresh.</li>
+      <li>The hardest section is Day 1: a sustained 1,000 m climb to Luxmore Hut. No technical difficulty, just steady uphill for 5–6 hours.</li>
+      <li>The best section is Luxmore Hut → Iris Burn — exposed alpine ridge with long views across Fiordland.</li>
+      <li>The ridge is fully exposed. Strong wind, rain, or low cloud can make it slow and cold. Check the forecast before committing.</li>
+      <li>Track conditions are good overall. Expect muddy sections after rain, especially the descent to Iris Burn.</li>
+      <li>Three huts: Luxmore (large, busy, best views), Iris Burn (quieter, near a waterfall), Moturau (lakeside, more relaxed).</li>
+      <li>Tent sites are available at each hut — cheaper, but you carry the gear.</li>
+      <li>Kea will go after loose gear at Luxmore. Keep packs zipped and don't leave anything outside the hut.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── NEED TO KNOW ──────────────── -->
   <div class="section">
     <div class="section-heading">Need to Know</div>
     <ul>
-      <li>No permit or booking required — completely free.</li>
-      <li>Check the weather before going — avoid high wind or low visibility.</li>
-      <li>Start early — afternoon clouds often roll in and block the views.</li>
-      <li>No toilets after the Skyline complex.</li>
-      <li>Sunscreen is essential — long exposed sections at altitude.</li>
-      <li>The track can be dangerous in winter without alpine gear.</li>
+      <li>Book huts early through the Department of Conservation in Great Walk season (Nov–Apr). Spots go fast for Dec–Feb.</li>
+      <li>No phone signal across most of the track. Tell someone your plan before you start.</li>
+      <li>Weather changes quickly. Don't push the ridge in bad conditions — wait it out at Luxmore if you have to.</li>
+      <li>Track is well marked. No navigation needed in normal conditions.</li>
+      <li>Outside Great Walk season, conditions are alpine — snow and ice are possible. Different trip entirely.</li>
+      <li>Rainbow Reach is an early exit point on Day 4 if you need to bail on the final flat section.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── FIGURE — GETTING THERE ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-3.webp"
-         alt="View of the Southern Alps"
+         src="../images/kepler-track-fiordland/kepler-track-fiordland-2.webp"
+         alt="Forest Burn emergency shelter"
          width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">View of the Southern Alps</figcaption>
+    <figcaption class="post-figure-caption">Forest Burn emergency shelter</figcaption>
   </figure>
 
-  <!-- ──────────────── GETTING THERE ──────────────── -->
   <div class="section">
     <div class="section-heading">Getting There</div>
     <ul>
-      <li>Walk from Queenstown CBD to the Tiki Trail trailhead — free, 10–15 minutes.</li>
-      <li>Skyline Gondola (optional shortcut) — around NZD 50 return, 5–10 minutes up.</li>
+      <li>Bus from Queenstown to Te Anau — $35–$60 NZD, ~2.5 hours.</li>
+      <li>Te Anau to the Kepler trailhead (Control Gates) — 5–10 min by car, or $15–$25 NZD by shuttle.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── GETTING AROUND ──────────────── -->
   <div class="section">
     <div class="section-heading">Getting Around</div>
     <ul>
-      <li>Everything is walkable from Queenstown CBD.</li>
-      <li>No transport needed for the hike itself.</li>
+      <li>Te Anau is small and walkable — everything central is within 10–15 minutes on foot.</li>
+      <li>Shuttles to/from the Kepler start and end points — $15–$25 NZD per leg, organised through your accommodation or the i-Site.</li>
+      <li>Hitchhiking is common between Te Anau and the trailheads. Generally safe in Great Walk season.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── WHERE TO STAY ──────────────── -->
   <div class="section">
     <div class="section-heading">Where to Stay</div>
     <ul>
-      <li>Hostels in Queenstown CBD — NZD 35–60/night, dorm beds, walking distance to the trailhead.</li>
-      <li>Budget motels — NZD 100–160/night, private rooms, kitchenette common.</li>
-      <li>Holiday parks (if driving) — NZD 25–40/night for a powered site, slightly out of town.</li>
+      <li>Te Anau budget hotels — $70–$120 NZD/night for basic private rooms. Book ahead in Dec–Jan.</li>
+      <li>Te Anau motels — $120–$180 NZD/night, more comfort, parking, kitchenettes.</li>
+      <li>DOC huts on the track — $40–$80 NZD/night, booked through the Department of Conservation. Tent sites at hut locations are cheaper but you carry the gear.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── FIGURE — EAT AND DRINK ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-4.webp"
-         alt="Descending from Ben Lomond Summit"
+         src="../images/kepler-track-fiordland/kepler-track-fiordland-3.webp"
+         alt="Overlooking South Fiord"
          width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">Descending from Ben Lomond Summit</figcaption>
+    <figcaption class="post-figure-caption">Overlooking South Fiord</figcaption>
   </figure>
 
-  <!-- ──────────────── EAT AND DRINK ──────────────── -->
   <div class="section">
     <div class="section-heading">Eat and Drink</div>
     <ul>
-      <li>Grab takeaway before the hike from a bakery or supermarket — NZD 10–15.</li>
-      <li>Carry snacks — there is no food on the trail.</li>
-      <li>Post-hike burger or pub meal in town — NZD 20–30.</li>
-      <li>Supermarket meal prep keeps daily costs low.</li>
+      <li>Stock up at the Te Anau supermarket before the hike — $20–$30 NZD/day for trail food covers it comfortably.</li>
+      <li>Nothing is sold on the track. Bring everything for 3–4 days.</li>
+      <li>Post-hike pub meals in town — $20–$35 NZD per meal.</li>
+      <li>Hut water is rainwater-collected and untreated. Boil or filter if you're cautious.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── COSTS ──────────────── -->
   <div class="section">
     <div class="section-heading">Costs</div>
     <table class="costs">
@@ -550,29 +551,27 @@
         <tr><th>Item</th><th>NZD</th></tr>
       </thead>
       <tbody>
-        <tr><td>Food (groceries + takeaway)</td><td>$25</td></tr>
-        <tr><td>Coffee</td><td>$6</td></tr>
-        <tr><td>Post-hike meal</td><td>$25</td></tr>
-        <tr><td>Gondola (optional)</td><td>$50</td></tr>
-        <tr class="total"><td>Daily total</td><td>$56 – $106</td></tr>
+        <tr><td>DOC hut (Great Walk season)</td><td>$40 – $80</td></tr>
+        <tr><td>Trail food (per day)</td><td>$20 – $30</td></tr>
+        <tr><td>Shuttle / transport</td><td>$15 – $25</td></tr>
+        <tr><td>Activities and side trips</td><td>$0 – $20</td></tr>
+        <tr class="total"><td>Daily total</td><td>$90 – $150</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- ──────────────── AD ──────────────── -->
   <div class="ad-placeholder ad-rect">Advertisement</div>
 
-  <!-- ──────────────── WHAT TO PACK ──────────────── -->
   <div class="section">
     <div class="section-heading">What to Pack</div>
     <ul>
-      <li>2 L of water minimum — no refill points on the track.</li>
-      <li>Windproof jacket — the summit is exposed even on clear days.</li>
-      <li>Trail runners or boots — loose gravel near the top.</li>
-      <li>Hat and sunscreen — strong alpine sun on the long exposed sections.</li>
-      <li>Snacks and lunch — long climb with no shops past the gondola complex.</li>
-      <li>Phone and offline map — track is clear but a good backup if cloud rolls in.</li>
-      <li>Light gloves (shoulder season) — cold wind near the summit.</li>
+      <li>Waterproof jacket — Fiordland is wet. Non-negotiable, even in summer.</li>
+      <li>Warm layers for the alpine ridge — wind exposure between Luxmore and Iris Burn drops the felt temperature fast.</li>
+      <li>2–3 L water capacity — refill at huts.</li>
+      <li>Hiking shoes with grip — muddy descents in places.</li>
+      <li>Headlamp — hut lighting is minimal, sunset is early outside midsummer.</li>
+      <li>3–4 days of food, plus a buffer day in case of weather delay.</li>
+      <li>Basic first aid and blister care.</li>
     </ul>
   </div>
 
@@ -580,7 +579,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Oreadis</span>
+    <span>© 2026 Pack Light</span>
     <span><a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a></span>
   </div>
 </footer>

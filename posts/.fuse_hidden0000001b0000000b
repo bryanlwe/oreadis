@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="post-country" content="New Zealand">
-<meta name="post-country-slug" content="new-zealand">
-<meta name="post-type" content="hike">
-<meta name="post-region" content="South Island, NZ">
-<title>Ben Lomond Summit Track, Queenstown — Oreadis</title>
+<meta name="post-country" content="Thailand">
+<meta name="post-country-slug" content="thailand">
+<meta name="post-type" content="travel">
+<meta name="post-region" content="Northern Thailand">
+<title>Chiang Mai, Thailand — Pack Light</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -384,7 +384,7 @@
 
 <header>
   <div class="header-inner">
-    <a class="site-name" href="../index.html">Oreadis</a>
+    <a class="site-name" href="../index.html">Pack Light</a>
     <nav>
       <a href="../index.html">Home</a>
       <a href="../browse.html">Browse</a>
@@ -399,107 +399,90 @@
   <!-- ──────────────── POST HEADER ──────────────── -->
   <div class="post-header">
     <div class="post-meta-top">
-      <span class="region">South Island, NZ</span>
-      <span>1 Dec 2025</span>
+      <span class="region">Northern Thailand</span>
+      <span>28 Feb 2026</span>
     </div>
     <div class="post-tags">
-      <a class="tag-pill" href="../browse.html?country=new-zealand">New Zealand</a>
-      <a class="tag-pill" href="../browse.html?type=hike">Hike</a>
+      <a class="tag-pill" href="../browse.html?country=thailand">Thailand</a>
+      <a class="tag-pill" href="../browse.html?type=travel">Travel</a>
     </div>
-    <h1 class="post-title-large">Ben Lomond Summit Track, Queenstown</h1>
+    <h1 class="post-title-large">Chiang Mai, Thailand</h1>
   </div>
 
-  <!-- ──────────────── HERO FIGURE ──────────────── -->
+  <!-- ──────────────── HERO IMAGE ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-1.webp"
-         alt="Queenstown in the Background Before Ben Lomond Saddle"
-         width="1400" height="1050" loading="eager">
-    <figcaption class="post-figure-caption">Queenstown in the Background Before Ben Lomond Saddle</figcaption>
+         src="../images/chiang-mai-thailand/chiang-mai-thailand-1.webp"
+         alt="Phra Sing, Chiang Mai"
+         width="1440" height="1080" loading="eager">
+    <figcaption class="post-figure-caption">Phra Sing, Chiang Mai</figcaption>
   </figure>
 
   <!-- ──────────────── QUICK FACTS ──────────────── -->
   <div class="quick-facts">
     <span class="quick-facts-label">Quick Facts</span>
-    <div class="qf-item"><span class="qf-key">Distance</span><span class="qf-val">14 km return</span></div>
-    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">6–8 hours</span></div>
-    <div class="qf-item"><span class="qf-key">Cost</span><span class="qf-val">$0 (free track)</span></div>
-    <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">Nov – Apr</span></div>
+    <div class="qf-item"><span class="qf-key">Trip style</span><span class="qf-val">City base / temples &amp; day trips</span></div>
+    <div class="qf-item"><span class="qf-key">Duration</span><span class="qf-val">~7 days</span></div>
+    <div class="qf-item"><span class="qf-key">Per day cost</span><span class="qf-val">~1,500 THB</span></div>
+    <div class="qf-item"><span class="qf-key">Best season</span><span class="qf-val">Nov – Jan</span></div>
   </div>
 
   <!-- ──────────────── OVERVIEW ──────────────── -->
   <div class="section">
     <div class="section-heading">Overview</div>
-    <p>This is the best day hike straight out of Queenstown. Big views, steep climbing, and no transport needed if you start from town. I did it as a long day hike and it felt like a proper alpine effort without needing overnight gear.</p>
-    <p>It's a steady grind up through forest, then exposed ridgeline walking to the summit. On a clear day, you get full views over Lake Wakatipu and the surrounding ranges. I spent around NZD 60–80 for the day including food and a post-hike meal.</p>
-  </div>
-
-  <!-- ──────────────── STATS AND ROUTE ────────────────
-       Single-day hike variant. Heading shortened from "Daily Stats and Route"
-       and bold-label bullets used for scannability — both per-post overrides
-       not currently in design-guidelines.md (user-approved). -->
-  <div class="section">
-    <div class="section-heading">Stats and Route</div>
-    <ul>
-      <li><strong>Route:</strong> Queenstown → Tiki Trail → Skyline → Ben Lomond Saddle → Summit → return</li>
-      <li><strong>Distance:</strong> 14 km return</li>
-      <li><strong>Elevation:</strong> +1,450 m / −1,450 m</li>
-      <li><strong>Time:</strong> 6–8 hours</li>
-    </ul>
-    <p class="note"><strong>Alternative:</strong> Take the Skyline Gondola up to cut around 400 m of elevation off the climb.</p>
-  </div>
-
-  <!-- ──────────────── FIGURE — TRIP NOTES ──────────────── -->
-  <figure class="post-figure">
-    <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-2.webp"
-         alt="View of the Southern Alps"
-         width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">View of the Southern Alps</figcaption>
-  </figure>
-
-  <!-- ──────────────── TRIP NOTES / REPORT ──────────────── -->
-  <div class="section">
-    <div class="section-heading">Trip Notes / Report</div>
-    <ul>
-      <li>Most people go up via the Tiki Trail — steep but shaded, good warm-up.</li>
-      <li>The hardest section is the saddle to summit — very steep, loose gravel, fully exposed.</li>
-      <li>The best section is the ridgeline — wide open views the whole way.</li>
-      <li>Weather changes fast — the summit can be windy even when town is calm.</li>
-      <li>Track is well-marked, but snow and ice in the shoulder seasons make it risky.</li>
-      <li>No water sources after Skyline — carry everything from the start.</li>
-      <li>Lots of kea (alpine parrots) near the saddle — they will go through your bag.</li>
-    </ul>
+    <p>Chiang Mai is one of the easiest places in Southeast Asia to settle into for a week. It has enough cafes, markets, temples, and mountain day trips to keep things interesting without feeling overwhelming. I used it as a base for hiking, cafe hopping, and exploring Northern Thai culture while keeping costs low.</p>
+    <p>The city itself is very walkable around the Old City, but the best parts of Chiang Mai are outside the centre. Day trips into the mountains, waterfalls, and national parks are what make this place worth staying longer than a couple of nights.</p>
+    <p>I averaged around 1,500 THB per day staying in hostels, eating local food, and using shared transport or scooters. It is easy to spend more in Nimman cafes and nightlife areas, but budget travel here is still straightforward.</p>
   </div>
 
   <!-- ──────────────── NEED TO KNOW ──────────────── -->
   <div class="section">
     <div class="section-heading">Need to Know</div>
     <ul>
-      <li>No permit or booking required — completely free.</li>
-      <li>Check the weather before going — avoid high wind or low visibility.</li>
-      <li>Start early — afternoon clouds often roll in and block the views.</li>
-      <li>No toilets after the Skyline complex.</li>
-      <li>Sunscreen is essential — long exposed sections at altitude.</li>
-      <li>The track can be dangerous in winter without alpine gear.</li>
+      <li>Burning season usually runs from February to April. Air quality can get very bad during this period.</li>
+      <li>Most tourists can enter Thailand visa-free for short stays, but always check current entry rules before flying.</li>
+      <li>Grab works well in Chiang Mai and is usually cheaper than negotiating with tuk-tuks.</li>
+      <li>Temples require covered shoulders and shorts below the knee.</li>
+      <li>ATM withdrawal fees are high in Thailand. Withdraw larger amounts less often.</li>
+      <li>Mountain areas around Chiang Mai are cooler than the city, especially early mornings from November to January.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── FIGURE — GETTING THERE ──────────────── -->
+  <!-- ──────────────── WHAT TO DO ──────────────── -->
+  <div class="section">
+    <div class="section-heading">What to Do</div>
+    <ul>
+      <li><strong>Old City temples</strong> include Wat Phra Singh, Wat Chedi Luang, and Wat Chiang Man. Most are active religious sites, so mornings are quieter and more respectful than afternoons. Entry fees are usually 20–50 THB.</li>
+      <li><strong>Sunday Walking Street Market</strong> runs along Ratchadamnoen Road inside the Old City from around 4 PM, stretching almost the full length of the street between Tha Phae Gate and Wat Phra Singh. One of the better spots for cheap street food, local crafts, live music, and people watching.</li>
+      <li><strong>Nimman Road and One Nimman</strong> are the modern side of Chiang Mai with cafes, coworking spaces, bars, and boutiques. Noticeably more expensive than the Old City but has some of the best coffee in Northern Thailand.</li>
+      <li><strong>Chiang Mai cafes</strong> like Akha Ama Coffee, Graph Cafe, and Ristr8to are worth visiting even if you are not a big coffee drinker. Most open early and work well for slow mornings or remote work sessions.</li>
+      <li><strong>Doi Suthep Temple</strong> is best visited early in the morning before haze and tour buses arrive. Mountain views over Chiang Mai are much clearer earlier in the day.</li>
+      <li><strong>Northern Thai cooking classes</strong> usually include a local market visit before teaching dishes like khao soi, green curry, pad thai, and sticky rice desserts.</li>
+      <li><strong>Ethical elephant sanctuaries</strong> such as Elephant Nature Park and Chang Chill focus on feeding and observing elephants rather than riding experiences.</li>
+      <li><strong>Muay Thai fights</strong> at Chiang Mai Boxing Stadium or Kalare Boxing Stadium are touristy but still a fun local night activity.</li>
+      <li><strong>Night markets</strong> include Chiang Mai Night Bazaar, Ploen Ruedee Night Market, and the Saturday Walking Street near Wua Lai Road.</li>
+      <li><strong>Bua Thong Waterfalls</strong> — also called the Sticky Waterfalls — have a grippy limestone surface that lets you climb directly up sections of the waterfall.</li>
+      <li><strong>Mae Kampong village</strong> is a quieter mountain village east of Chiang Mai, popular for cafes, cool weather, and short forest walks.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── GETTING THERE — IMAGE ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-3.webp"
-         alt="View of the Southern Alps"
-         width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">View of the Southern Alps</figcaption>
+         src="../images/chiang-mai-thailand/chiang-mai-thailand-2.webp"
+         alt="Wat Chiang Man, Chiang Mai"
+         width="1440" height="1080" loading="lazy">
+    <figcaption class="post-figure-caption">Wat Chiang Man, Chiang Mai</figcaption>
   </figure>
 
   <!-- ──────────────── GETTING THERE ──────────────── -->
   <div class="section">
     <div class="section-heading">Getting There</div>
     <ul>
-      <li>Walk from Queenstown CBD to the Tiki Trail trailhead — free, 10–15 minutes.</li>
-      <li>Skyline Gondola (optional shortcut) — around NZD 50 return, 5–10 minutes up.</li>
+      <li>Flights from Bangkok take around 1 hour 15 minutes. Budget airlines regularly sell tickets from 900–2,000 THB.</li>
+      <li>Overnight sleeper trains from Bangkok take 11–13 hours. Second-class sleeper tickets usually cost 900–1,500 THB.</li>
+      <li>Long-distance buses from Bangkok take 9–11 hours and cost roughly 600–900 THB.</li>
+      <li>Chiang Mai International Airport is about 15 minutes from the Old City by Grab. Expect to pay around 120–180 THB.</li>
     </ul>
   </div>
 
@@ -507,8 +490,11 @@
   <div class="section">
     <div class="section-heading">Getting Around</div>
     <ul>
-      <li>Everything is walkable from Queenstown CBD.</li>
-      <li>No transport needed for the hike itself.</li>
+      <li>Walking works well inside the Old City.</li>
+      <li>Songthaews are the cheapest local transport option. Most short trips cost 30–50 THB.</li>
+      <li>Grab is reliable and avoids haggling. Short rides around the city are usually 70–150 THB.</li>
+      <li>Scooter rental costs around 200–350 THB per day excluding fuel. An international driving permit is technically required.</li>
+      <li>Shared minivans are common for day trips to national parks and nearby towns.</li>
     </ul>
   </div>
 
@@ -516,29 +502,51 @@
   <div class="section">
     <div class="section-heading">Where to Stay</div>
     <ul>
-      <li>Hostels in Queenstown CBD — NZD 35–60/night, dorm beds, walking distance to the trailhead.</li>
-      <li>Budget motels — NZD 100–160/night, private rooms, kitchenette common.</li>
-      <li>Holiday parks (if driving) — NZD 25–40/night for a powered site, slightly out of town.</li>
+      <li>Old City hostels suit first-time visitors and budget travellers. Dorm beds usually cost 250–500 THB per night.</li>
+      <li>Nimman has modern guesthouses and apartments close to cafes and nightlife. Private rooms usually start around 700–1,500 THB.</li>
+      <li>Riverside guesthouses are quieter and suited for slower trips. Budget around 600–1,200 THB for simple private rooms.</li>
     </ul>
   </div>
 
-  <!-- ──────────────── FIGURE — EAT AND DRINK ──────────────── -->
+  <!-- ──────────────── EAT AND DRINK — IMAGE ──────────────── -->
   <figure class="post-figure">
     <img class="post-figure-img"
-         src="../images/ben-lomond-queenstown/ben-lomond-queenstown-4.webp"
-         alt="Descending from Ben Lomond Summit"
-         width="1400" height="1050" loading="lazy">
-    <figcaption class="post-figure-caption">Descending from Ben Lomond Summit</figcaption>
+         src="../images/chiang-mai-thailand/chiang-mai-thailand-3.webp"
+         alt="Wat Prathat Doi Suthep, Chiang Mai"
+         width="1440" height="1080" loading="lazy">
+    <figcaption class="post-figure-caption">Wat Prathat Doi Suthep, Chiang Mai</figcaption>
   </figure>
 
   <!-- ──────────────── EAT AND DRINK ──────────────── -->
   <div class="section">
     <div class="section-heading">Eat and Drink</div>
     <ul>
-      <li>Grab takeaway before the hike from a bakery or supermarket — NZD 10–15.</li>
-      <li>Carry snacks — there is no food on the trail.</li>
-      <li>Post-hike burger or pub meal in town — NZD 20–30.</li>
-      <li>Supermarket meal prep keeps daily costs low.</li>
+      <li>Khao soi is the must-try Northern Thai dish. Expect to pay 60–120 THB at local restaurants.</li>
+      <li>Night markets are the cheapest places to eat. Meals often cost 50–100 THB.</li>
+      <li>Local coffee culture is strong because of Northern Thailand's coffee farms. Cafe drinks usually cost 60–120 THB.</li>
+      <li>Try sai ua Northern Thai sausage and mango sticky rice from local stalls.</li>
+    </ul>
+  </div>
+
+  <!-- ──────────────── DAY HIKES — IMAGE ──────────────── -->
+  <figure class="post-figure">
+    <img class="post-figure-img"
+         src="../images/chiang-mai-thailand/chiang-mai-thailand-4.webp"
+         alt="Doi Inthanon National Park"
+         width="1440" height="1080" loading="lazy">
+    <figcaption class="post-figure-caption">Doi Inthanon National Park</figcaption>
+  </figure>
+
+  <!-- ──────────────── DAY HIKES / TRIPS AND WALKS ──────────────── -->
+  <div class="section">
+    <div class="section-heading">Day Hikes / Trips and Walks</div>
+    <ul>
+      <li><strong>Doi Suthep Monk's Trail</strong> — 5 km return, moderate, no guide required, free. A shaded forest walk leading up to Wat Pha Lat and on to Doi Suthep.</li>
+      <li><strong>Doi Inthanon National Park trails</strong> — short walks from 2–6 km, easy to moderate, no guide required. Park entry around 300 THB. Thailand's highest peak is here and temperatures can feel surprisingly cold early in the morning.</li>
+      <li><strong>Kew Mae Pan Nature Trail</strong> — roughly 3 km loop, moderate, local guide required during open season. Guide fee around 200 THB per group.</li>
+      <li><strong>Pai</strong> — ~3 hours north by minivan (~150–200 THB each way). Pai Canyon is a 1 km ridge walk with optional scrambling, plus hot springs, waterfalls, and riverside cafes. Most travellers stay 2–3 nights rather than day-trip it.</li>
+      <li><strong>Chiang Dao</strong> — ~1.5 hours north by minivan (~80–120 THB each way). Tham Chiang Dao is a guided ~1 km lamp-lit cave walk (~40 THB entry, ~100 THB lamp guide). Karst mountain and forest trails outside town for fitter visitors.</li>
+      <li><strong>Lampang</strong> — ~1.5 hours south by train (~50 THB). Walkable Lanna old town, wooden shophouses, horse-drawn carriages, and Wat Phra That Lampang Luang ~20 km out. Suits a slow cultural day trip.</li>
     </ul>
   </div>
 
@@ -547,14 +555,16 @@
     <div class="section-heading">Costs</div>
     <table class="costs">
       <thead>
-        <tr><th>Item</th><th>NZD</th></tr>
+        <tr><th>Item</th><th>THB</th></tr>
       </thead>
       <tbody>
-        <tr><td>Food (groceries + takeaway)</td><td>$25</td></tr>
-        <tr><td>Coffee</td><td>$6</td></tr>
-        <tr><td>Post-hike meal</td><td>$25</td></tr>
-        <tr><td>Gondola (optional)</td><td>$50</td></tr>
-        <tr class="total"><td>Daily total</td><td>$56 – $106</td></tr>
+        <tr><td>Hostel dorm</td><td>350</td></tr>
+        <tr><td>Local meals</td><td>250</td></tr>
+        <tr><td>Coffee and drinks</td><td>150</td></tr>
+        <tr><td>Transport</td><td>250</td></tr>
+        <tr><td>Attractions and temple fees</td><td>300</td></tr>
+        <tr><td>Scooter fuel or Grab rides</td><td>200</td></tr>
+        <tr class="total"><td>Daily total</td><td>1,500</td></tr>
       </tbody>
     </table>
   </div>
@@ -562,25 +572,11 @@
   <!-- ──────────────── AD ──────────────── -->
   <div class="ad-placeholder ad-rect">Advertisement</div>
 
-  <!-- ──────────────── WHAT TO PACK ──────────────── -->
-  <div class="section">
-    <div class="section-heading">What to Pack</div>
-    <ul>
-      <li>2 L of water minimum — no refill points on the track.</li>
-      <li>Windproof jacket — the summit is exposed even on clear days.</li>
-      <li>Trail runners or boots — loose gravel near the top.</li>
-      <li>Hat and sunscreen — strong alpine sun on the long exposed sections.</li>
-      <li>Snacks and lunch — long climb with no shops past the gondola complex.</li>
-      <li>Phone and offline map — track is clear but a good backup if cloud rolls in.</li>
-      <li>Light gloves (shoulder season) — cold wind near the summit.</li>
-    </ul>
-  </div>
-
 </main>
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Oreadis</span>
+    <span>© 2026 Pack Light</span>
     <span><a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a></span>
   </div>
 </footer>

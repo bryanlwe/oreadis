@@ -7,7 +7,7 @@
 <meta name="post-country-slug" content="new-zealand">
 <meta name="post-type" content="hike">
 <meta name="post-region" content="South Island, NZ">
-<title>Ben Lomond Summit Track, Queenstown — Oreadis</title>
+<title>Ben Lomond Summit Track, Queenstown — Pack Light</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -384,7 +384,7 @@
 
 <header>
   <div class="header-inner">
-    <a class="site-name" href="../index.html">Oreadis</a>
+    <a class="site-name" href="../index.html">Pack Light</a>
     <nav>
       <a href="../index.html">Home</a>
       <a href="../browse.html">Browse</a>
@@ -580,7 +580,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 Oreadis</span>
+    <span>© 2026 Pack Light</span>
     <span><a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a></span>
   </div>
 </footer>
